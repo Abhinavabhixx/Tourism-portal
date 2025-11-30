@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Thekkinde Naadu</title>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="sample.html">Thekkinde Naadu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="destination.html">Where To Go</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="form.html">Plan Your Trip</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="image-sec">
+    <img src="./nadukani-churam.jpg" alt="Nilambur greenery" class="main-image">
+    <h2 class="image-desc">Plan Your Trip<br>Tell us your preferences</h2>
+  </header>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <div class="form-wrapper">
+      <form class="form-card" novalidate>
+        <h3 class="form-title">Travel Enquiry</h3>
+        <p class="form-subtitle">Share a few details and we’ll craft a personalized plan for Nilambur.</p>
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            <small class="hint">As shown on your ID</small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="mail" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="num" placeholder="+91 98765 43210" pattern="[+0-9\s-]{7,}" required>
+            <small class="hint">Include country code</small>
+          </div>
+
+          <div class="form-field">
+            <label for="destination">Preferred Spot</label>
+            <select id="destination" name="destination" required>
+              <option value="" selected disabled>Select a destination</option>
+              <option>Conolly's Plot</option>
+              <option>Adyanpara Waterfalls</option>
+              <option>Nedumkayam Rainforest</option>
+              <option>Nadukani Churam</option>
+              <option>Keralaamkund Waterfalls</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required>
+          </div>
+
+          <div class="form-field">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+
+          <div class="form-field">
+            <label for="adults">Adults</label>
+            <input type="number" id="adults" name="adults" min="1" max="20" value="2" required>
+          </div>
+
+          <div class="form-field">
+            <label for="children">Children</label>
+            <input type="number" id="children" name="children" min="0" max="20" value="0">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <span class="group-label">What is your interest?</span>
+          <div class="checkboxes">
+            <label><input type="checkbox" name="interest" value="hills"> Hill Stations</label>
+            <label><input type="checkbox" name="interest" value="water"> Water Activities</label>
+            <label><input type="checkbox" name="interest" value="adventure"> Adventure Activities</label>
+            <label><input type="checkbox" name="interest" value="safari"> Jungle Safari</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <span class="group-label">Accommodation</span>
+          <div class="radios">
+            <label><input type="radio" name="stay" value="budget" required> Budget</label>
+            <label><input type="radio" name="stay" value="standard"> Standard</label>
+            <label><input type="radio" name="stay" value="premium"> Premium</label>
+          </div>
+        </div>
+
+        <div class="form-field full">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us anything specific you have in mind..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <label class="terms"><input type="checkbox" required> I agree to the terms and privacy policy</label>
+          <button type="submit" class="btn-primary">Register</button>
+        </div>
+      </form>
+
+      <aside class="form-aside">
+        <div class="aside-card">
+          <img src="./teak-museum.jpg" alt="Teak Museum Nilambur" class="aside-image">
+          <div class="aside-desc">
+            <h4>Why Nilambur?</h4>
+            <p>World’s first Teak Museum, lush rainforests, vibrant culture, and serene waterfalls—perfect for an eco getaway.</p>
+          </div>
+        </div>
+
+        <div class="aside-grid">
+          <img src="./adyanpaara.jpg" alt="Adyanpara" class="thumb">
+          <img src="./nedumkayam.jpg" alt="Nedumkayam" class="thumb">
+          <img src="./nadukani-churam.jpg" alt="Nadukani Churam" class="thumb">
+          <img src="./keralaamkund.jpg" alt="Keralaamkund" class="thumb">
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+
+
+
+
+  <div class="end">
+  <Footer>
+    <hr>
+      <div class="container">
+        <p class="para">© 2025 Thekkinde Naadu. All rights reserved.</p>
+        <p class="mb-0">
+          <a href="#" class="text1">Privacy Policy</a>
+          <a href="#" class="text2">Contact Us</a>
+        </p>
+      </div>
+  </Footer>
+</div>
+
+
+
+</body>
+</html>
